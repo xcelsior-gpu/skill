@@ -12,7 +12,7 @@ npx skills add xcelsior-gpu/skill
 Then set your access token (from <https://xcelsior.ca/dashboard/mcp>):
 
 ```bash
-export XCELSIOR_ACCESS_TOKEN="xcl_..."
+export XCELSIOR_ACCESS_TOKEN="xcel_ai_..."
 ```
 
 The agent installs [`@xcelsior-gpu/sdk`](https://www.npmjs.com/package/@xcelsior-gpu/sdk)
