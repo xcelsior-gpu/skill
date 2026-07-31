@@ -1,7 +1,7 @@
 # Xcelsior Agent Skill
 
 Teach any AI agent (Claude, Cursor, Codex, …) to drive [Xcelsior](https://xcelsior.ca)
-GPU compute directly through its public REST API.
+GPU compute through the official TypeScript SDK — no MCP client required.
 
 ## Install
 
@@ -15,10 +15,20 @@ Then set your access token (from <https://xcelsior.ca/dashboard/mcp>):
 export XCELSIOR_ACCESS_TOKEN="xcl_..."
 ```
 
-The agent can now list GPUs, check spot pricing, estimate cost, launch and monitor
-instances, and check billing — all in natural language.
+The agent installs [`@xcelsior-gpu/sdk`](https://www.npmjs.com/package/@xcelsior-gpu/sdk)
+and can then list GPUs, check spot pricing, estimate cost, launch and monitor
+instances, and check your wallet balance — all in natural language.
 
-Prefer MCP? Xcelsior also ships a hosted MCP server at `https://xcelsior.ca/mcp` —
-see the dashboard's **Connect** page.
+## Why the SDK rather than raw HTTP
+
+The SDK is typed, exposes real error classes (`XcelsiorApiError`,
+`XcelsiorApiTimeoutError`), and is generated from the same OpenAPI spec that backs the
+public API — so an agent using it cannot drift from the wire format the way hand-written
+requests do.
+
+## Prefer MCP?
+
+Xcelsior also ships a hosted MCP server at `https://xcelsior.ca/mcp`. See the
+dashboard's **Connect** page for a one-paste setup with your token embedded.
 
 Full API reference: <https://docs.xcelsior.ca>
