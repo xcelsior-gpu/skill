@@ -15,7 +15,7 @@ official SDK — typed, with real error classes, rather than hand-rolled HTTP.
    token ready to copy) or go to Settings → API & SSH.
 2. Export it:
    ```bash
-   export XCELSIOR_ACCESS_TOKEN="xcl_..."
+   export XCELSIOR_ACCESS_TOKEN="xcel_ai_..."
    ```
 3. Install the SDK in the working directory:
    ```bash
