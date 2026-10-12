@@ -6,8 +6,8 @@ description: Rent and manage GPU compute on Xcelsior directly from your agent �
 # Xcelsior GPU Compute
 
 Xcelsior is a GPU cloud where you rent verified GPUs by the hour (or run serverless
-inference) and pay in CAD. This skill lets an agent drive the platform through the
-official SDK — typed, with real error classes, rather than hand-rolled HTTP.
+inference). This skill lets an agent drive the platform through the official SDK —
+typed, with real error classes, rather than hand-rolled HTTP.
 
 ## Setup
 
