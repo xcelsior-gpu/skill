@@ -9,15 +9,18 @@ GPU compute through the official TypeScript SDK — no MCP client required.
 npx skills add xcelsior-gpu/skill
 ```
 
-Then set your access token (from <https://xcelsior.ca/dashboard/mcp>):
+Then set your access token (from <https://xcelsior.ca/dashboard/mcp>). Quick Connect
+uses `XCELSIOR_ACCESS_TOKEN`. The SDK README names the same bearer value
+`XCELSIOR_API_TOKEN`. The skill reads whichever is set.
 
 ```bash
 export XCELSIOR_ACCESS_TOKEN="xcel_ai_..."
 ```
 
 The agent installs [`@xcelsior-gpu/sdk`](https://www.npmjs.com/package/@xcelsior-gpu/sdk)
-and can then list GPUs, check spot pricing, estimate cost, launch and monitor
-instances, and check your wallet balance — all in natural language.
+and can then browse the marketplace, check spot prices, estimate cost in CAD, launch
+and monitor instances, and check your wallet balance — all in natural language.
+Call shapes live in [`SKILL.md`](./SKILL.md).
 
 ## Why the SDK rather than raw HTTP
 
